@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <!-- Include JavaScript for form validation -->
+    <script src="validate_employee_form.js"></script>
+</head>
+<body>
+    <form action="process.php" method="post" onsubmit="return validateEmployeeForm()">
+        <label for="employeeName">Employee Name:</label>
+        <input type="text" id="employeeName" name="employeeName" required><br>
+
+        <label for="employeeID">Employee ID:</label>
+        <input type="text" id="employeeID" name="employeeID" required><br>
+
+        <label for="departmentName">Department Name:</label>
+        <input type="text" id="departmentName" name="departmentName" required><br>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
+
+        <label for="joiningDate">Joining Date:</label>
+        <input type="date" id="joiningDate" name="joiningDate" required><br>
+
+        <input type="submit" value="Insert Employee">
+    </form>
+</body>
+</html>
